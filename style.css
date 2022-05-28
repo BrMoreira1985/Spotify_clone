@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-logo{
+   height: 3rem;
+   width: 10rem;
+   transform: scale(0.8);
+   background: url(../resources/Spotify_Logo.png) center center/cover;
+}
+
+nav .nav-logo:hover{
+    cursor: pointer;
+}
+
+.nav-actions {
+    color: white;
+    list-style: none;
+    width: 1000px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-actions li{
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-actions li:not(:nth-child(4)):hover{
+   color:#1dd760;
+   cursor: pointer;
+}
+
+.nav-actions li:nth-child(4):hover{
+    cursor: default;
+}
+
+
+.presentation {
+    background: url(../resources/backdrop.jpg) center center/cover;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1dd760;
+    
+}
+
+.presentation h1 {
+    margin: 0;
+    font-size: 9rem;
+    letter-spacing: -0.5rem;
+    width: 1200px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bolder;
+    line-height:10rem;
+}
+
+.presentation h2 {
+    padding: 2em 0 2em 0;
+    font-size: 1.2rem;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.presentation button{
+    border: none;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 50px;
+    color: #2941ab;
+    background-color: #1dd760;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.presentation button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #2de26d;
+}
+
+aside {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 1200px;
+    height: 200px;
+}
+
+.links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.list :nth-child(1){
+    color: gray;
+    text-transform: uppercase;
+}
+
+.links ul li{
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 0.8rem;
+}
+
+.links ul li:nth-child(n+2):hover{
+    color: #1dd760;
+    cursor: pointer;
+}
+
+.aside-logo{
+    height: 3rem;
+    width: 10rem;
+    transform: scale(0.8);
+    background: url(../resources/Spotify_Logo.png) center center/cover;
+}
+
+.aside-logo:hover{
+    cursor: pointer;
+}
+
+.social{
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+}
+
+.social-button{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: rgb(35, 35, 35);
+}
+
+.social-button:hover{
+    cursor: pointer;
+    color:#1dd760;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    color: grey;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.footer-actions{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-actions li{
+    padding: 0 1rem 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.footer-actions li:hover{
+   color: #1dd760;
+   cursor: pointer;
+}
+
+.region {
+    text-align: end;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.region :nth-child(1):hover{
+    color: #1dd760;
+    cursor: pointer;
+}
+
+.country{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.country img{
+    height: 20px;
+    width: auto;
+    margin: 0;
+    padding-right: 5px;
+    
+}
